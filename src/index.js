@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Images from './components/Images';
+import Files from './components/Files';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/images",
     element: <Images />,
+  },
+  {
+    path: "/files",
+    element: <Files />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
